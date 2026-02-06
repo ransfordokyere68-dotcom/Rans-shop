@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mini Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🛍️ Mini Shop</h1>
+  <p>Welcome! Pick your items 😄</p>
+
+  <div class="products">
+
+    <div class="card">
+      <h2>🎮 Gaming Mouse</h2>
+      <p>Price: $15</p>
+      <button onclick="addToCart('Gaming Mouse', 15)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h2>🎧 Headphones</h2>
+      <p>Price: $25</p>
+      <button onclick="addToCart('Headphones', 25)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h2>📱 Phone Case</h2>
+      <p>Price: $10</p>
+      <button onclick="addToCart('Phone Case', 10)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <h2>🍫 Chocolate Box</h2>
+      <p>Price: $8</p>
+      <button onclick="addToCart('Chocolate Box', 8)">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <h2>🛒 Cart</h2>
+  <p id="cart">Cart is empty</p>
+  <h3 id="total">Total: $0</h3>
+
+  <button class="clear" onclick="clearCart()">Clear Cart</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
